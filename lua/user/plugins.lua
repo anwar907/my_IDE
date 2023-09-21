@@ -1,10 +1,10 @@
-
 -- Additional Plugins
 lvim.plugins = {
   {
     "lunarvim/colorschemes"
   },
-  { "folke/tokyonight.nvim",
+  {
+    "folke/tokyonight.nvim",
     lazy = false,
     priority = 1000,
     opts = {}
@@ -26,6 +26,7 @@ lvim.plugins = {
       vim.g.NERDTreeShowBookmarks = 1
     end
   },
+  { "ray-x/go.nvim", run = ":GoUpdateBinaries" },
   {
     "tiagofumo/vim-nerdtree-syntax-highlight",
   },
