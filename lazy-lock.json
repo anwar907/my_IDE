@@ -11,7 +11,7 @@
   "codeium.vim": { "branch": "main", "commit": "45dd945883c2ff87553d78710797ad7a2602b269" },
   "colorschemes": { "branch": "master", "commit": "e29f32990d6e2c7c3a4763326194fbd847b49dac" },
   "dart-vim-plugin": { "branch": "master", "commit": "928302ec931caf0dcf21835cca284ccd2b192f7b" },
-  "flutter-tools.nvim": { "branch": "main", "commit": "8690d0b2685a39e50bd6e34b352dfcb420529460" },
+  "flutter-tools.nvim": { "branch": "main", "commit": "83d3edc734b9e9cf84e896f844b927f3b98a144c" },
   "friendly-snippets": { "branch": "main", "commit": "631f79e346b0b3203d2ce3eae619ca8d612e5463" },
   "gitsigns.nvim": { "branch": "main", "commit": "e5edefd9976039f5352e0c900f35206770b33a2d" },
   "indent-blankline.nvim": { "branch": "master", "commit": "018bd04d80c9a73d399c1061fa0c3b14a7614399" },
@@ -47,6 +47,6 @@
   "trouble.nvim": { "branch": "main", "commit": "3f85d8ed30e97ceeddbbcf80224245d347053711" },
   "vim-colorscheme-icons": { "branch": "master", "commit": "222763399d53480806edb98630849af3e56abacb" },
   "vim-nerdtree-syntax-highlight": { "branch": "master", "commit": "35e70334a2ff6e89b82a145d1ac889e82d1ddb4e" },
-  "vimtex": { "branch": "master", "commit": "8e547e203f1633493ba906a79b8b8444dad5167e" },
+  "vimtex": { "branch": "master", "commit": "d7221267f5642e5904a45a8e661f751dff26c1a9" },
   "which-key.nvim": { "branch": "main", "commit": "4acffc92953a90a790603bfdab7c92319ab167b1" }
 }
