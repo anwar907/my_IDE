@@ -26,7 +26,7 @@ lvim.plugins = {
       vim.g.NERDTreeShowBookmarks = 1
     end
   },
-  { "ray-x/go.nvim", run = ":GoUpdateBinaries" },
+  { "ray-x/go.nvim" },
   {
     "tiagofumo/vim-nerdtree-syntax-highlight",
   },
@@ -59,5 +59,5 @@ lvim.plugins = {
       vim.keymap.set('i', '<c-,>', function() return vim.fn['codeium#CycleCompletions'](-1) end, { expr = true })
       vim.keymap.set('i', '<c-x>', function() return vim.fn['codeium#Clear']() end, { expr = true })
     end
-  }
+  },
 }
