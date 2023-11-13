@@ -17,7 +17,6 @@ lvim.plugins = {
   { "JuliaEditorSupport/julia-vim" },
   {
     "preservim/nerdtree",
-    cmd = "NERDTreeToggle",
     init = function()
       vim.g.NERDTreeMinimalUI = 1
       vim.g.NERDTreeDirArrowExpandable = '󰉋'
@@ -50,14 +49,18 @@ lvim.plugins = {
   {
     "bryanmylee/vim-colorscheme-icons"
   },
+--  {
+--    'Exafunction/codeium.vim',
+--    init = function()
+--      -- Change '<C-g>' here to any keycode you like.
+--      vim.keymap.set('i', '<C-g>', function() return vim.fn['codeium#Accept']() end, { expr = true })
+--      vim.keymap.set('i', '<c-;>', function() return vim.fn['codeium#CycleCompletions'](1) end, { expr = true })
+--      vim.keymap.set('i', '<c-,>', function() return vim.fn['codeium#CycleCompletions'](-1) end, { expr = true })
+--      vim.keymap.set('i', '<c-x>', function() return vim.fn['codeium#Clear']() end, { expr = true })
+--    end
+--  },
   {
-    'Exafunction/codeium.vim',
-    init = function()
-      -- Change '<C-g>' here to any keycode you like.
-      vim.keymap.set('i', '<C-g>', function() return vim.fn['codeium#Accept']() end, { expr = true })
-      vim.keymap.set('i', '<c-;>', function() return vim.fn['codeium#CycleCompletions'](1) end, { expr = true })
-      vim.keymap.set('i', '<c-,>', function() return vim.fn['codeium#CycleCompletions'](-1) end, { expr = true })
-      vim.keymap.set('i', '<c-x>', function() return vim.fn['codeium#Clear']() end, { expr = true })
-    end
+    "rust-lang/rust.vim"
   },
+  {"pechorin/any-jump.vim"},
 }
