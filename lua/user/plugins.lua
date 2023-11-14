@@ -15,7 +15,7 @@ lvim.plugins = {
   },
   { "lervag/vimtex" },
   { "JuliaEditorSupport/julia-vim" },
-  {
+ {
     "preservim/nerdtree",
     init = function()
       vim.g.NERDTreeMinimalUI = 1
@@ -43,9 +43,9 @@ lvim.plugins = {
   {
     "dart-lang/dart-vim-plugin",
   },
-  {
-    "Xuyuanp/nerdtree-git-plugin",
-  },
+--  {
+--    "Xuyuanp/nerdtree-git-plugin",
+--  },
   {
     "bryanmylee/vim-colorscheme-icons"
   },
@@ -63,4 +63,7 @@ lvim.plugins = {
     "rust-lang/rust.vim"
   },
   {"pechorin/any-jump.vim"},
+  {"nvim-tree/nvim-web-devicons"},
+  {"nvim-treesitter/nvim-treesitter"},
+--  {"nvim-tree/nvim-tree.lua"}
 }
