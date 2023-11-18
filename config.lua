@@ -14,7 +14,7 @@ require('lspconfig').dartls.setup {}
 require('toggleterm').setup {}
 require("user.symbol-outline")
 require("flutter-tools").setup {
-  fvm         = "3.13.9",  
+  fvm         = "3.13.9",
 
   debugger    = {
     enabled = true,

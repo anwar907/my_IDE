@@ -171,24 +171,24 @@ local mappings = {
   -- require("dapui").close()
   -- require("dapui").toggle()
 
-  f = {
-    name = "Find",
-    b = { "<cmd>Telescope git_branches<cr>", "Checkout branch" },
-    c = { "<cmd>Telescope colorscheme<cr>", "Colorscheme" },
-    f = {
-      "<cmd>lua require('telescope.builtin').find_files(require('telescope.themes').get_dropdown{previewer = false})<cr>",
-      "Find files",
-    },
-    t = { "<cmd>Telescope live_grep theme=ivy<cr>", "Find Text" },
-    h = { "<cmd>Telescope help_tags<cr>", "Help" },
-    i = { "<cmd>lua require('telescope').extensions.media_files.media_files()<cr>", "Media" },
-    l = { "<cmd>Telescope resume<cr>", "Last Search" },
-    M = { "<cmd>Telescope man_pages<cr>", "Man Pages" },
-    r = { "<cmd>Telescope oldfiles<cr>", "Recent File" },
-    R = { "<cmd>Telescope registers<cr>", "Registers" },
-    k = { "<cmd>Telescope keymaps<cr>", "Keymaps" },
-    C = { "<cmd>Telescope commands<cr>", "Commands" },
-  },
+-- f = {
+--    name = "Find",
+--    b = { "<cmd>Telescope git_branches<cr>", "Checkout branch" },
+--    c = { "<cmd>Telescope colorscheme<cr>", "Colorscheme" },
+--    f = {
+--      "<cmd>lua require('telescope.builtin').find_files(require('telescope.themes').get_dropdown{previewer = false})<cr>",
+--      "Find files",
+--    },
+--    t = { "<cmd>Telescope live_grep theme=ivy<cr>", "Find Text" },
+--    h = { "<cmd>Telescope help_tags<cr>", "Help" },
+--    i = { "<cmd>lua require('telescope').extensions.media_files.media_files()<cr>", "Media" },
+--    l = { "<cmd>Telescope resume<cr>", "Last Search" },
+--    M = { "<cmd>Telescope man_pages<cr>", "Man Pages" },
+--    r = { "<cmd>Telescope oldfiles<cr>", "Recent File" },
+--    R = { "<cmd>Telescope registers<cr>", "Registers" },
+--    k = { "<cmd>Telescope keymaps<cr>", "Keymaps" },
+--    C = { "<cmd>Telescope commands<cr>", "Commands" },
+--  },
 
   g = {
     name = "Git",
@@ -265,21 +265,21 @@ local mappings = {
   --   b = { "<cmd>lua require('surround').toggle_brackets()<cr>", "Brackets" },
   -- },
 
-  S = {
+ -- S = {
     -- name = "Session",
     -- s = { "<cmd>SaveSession<cr>", "Save" },
     -- l = { "<cmd>LoadLastSession!<cr>", "Load Last" },
     -- d = { "<cmd>LoadCurrentDirSession!<cr>", "Load Last Dir" },
     -- f = { "<cmd>Telescope sessions save_current=false<cr>", "Find Session" },
-    name = "SnipRun",
-    c = { "<cmd>SnipClose<cr>", "Close" },
-    f = { "<cmd>%SnipRun<cr>", "Run File" },
-    i = { "<cmd>SnipInfo<cr>", "Info" },
-    m = { "<cmd>SnipReplMemoryClean<cr>", "Mem Clean" },
-    r = { "<cmd>SnipReset<cr>", "Reset" },
-    t = { "<cmd>SnipRunToggle<cr>", "Toggle" },
-    x = { "<cmd>SnipTerminate<cr>", "Terminate" },
-  },
+--    name = "SnipRun",
+--    c = { "<cmd>SnipClose<cr>", "Close" },
+--    f = { "<cmd>%SnipRun<cr>", "Run File" },
+--    i = { "<cmd>SnipInfo<cr>", "Info" },
+--    m = { "<cmd>SnipReplMemoryClean<cr>", "Mem Clean" },
+--    r = { "<cmd>SnipReset<cr>", "Reset" },
+--    t = { "<cmd>SnipRunToggle<cr>", "Toggle" },
+--    x = { "<cmd>SnipTerminate<cr>", "Terminate" },
+--  },
 
   t = {
     name = "Terminal",
