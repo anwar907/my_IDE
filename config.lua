@@ -1,4 +1,3 @@
-
 -- Forum: https://www.reddit.com/r/lunarvim/
 -- Discord: https://discord.com/invite/Xb9B4Ny
 --
@@ -54,6 +53,53 @@ require("flutter-tools").setup {
     enabled = false
   },
 }
+
+local dap = require('dap')
+
+-- Dart / Flutter
+dap.adapters.dart       = {
+  type = 'executable',
+  command = 'dart',
+  args = { 'debug_adapter' }
+}
+dap.adapters.flutter    = {
+  type = 'executable',
+  command = 'flutter',
+  args = { 'debug_adapter' }
+}
+dap.configurations.dart = {
+  {
+    type = "dart",
+    request = "launch",
+    name = "Launch dart",
+    dartSdkPath = "/Users/war/flutter/bin/dart",       -- ensure this is correct
+    flutterSdkPath = "/Users/war/flutter/bin/flutter", -- ensure this is correct
+    program = "${workspaceFolder}/lib/main.dart",      -- ensure this is correct
+    cwd = "${workspaceFolder}",
+  },
+  {
+    type = "flutter",
+    request = "launch",
+    name = "Launch flutter",
+    dartSdkPath = "/Users/war/flutter/bin/dart",       -- ensure this is correct
+    flutterSdkPath = "/Users/war/flutter/bin/flutter", -- ensure this is correct
+    program = "${workspaceFolder}/lib/main.dart",      -- ensure this is correct
+    cwd = "${workspaceFolder}",
+  }
+}
+
+
+
+vim.api.nvim_set_hl(0, 'DapBreakpoint', {ctermbg = 0, fg = '#993939', bg = '#21353f'})
+vim.fn.sign_define('DapBreakpoint', { text = '🧘', texthl = 'red', linehl = '', numhl = '' })
+
+-- init.lua or lv-config.lua
+vim.fn.sign_define('DapStopped', { text = '🧘', texthl = 'red', linehl = '', numhl = '' })
+-- init.lua or lv-config.lua
+vim.fn.sign_define('DapBreakpointRejected', { text = '🧘', texthl = 'red', linehl = '', numhl = '' })
+
+vim.fn.sign_define('DapContinue', { text = '🏃', texthl = 'DapContinue' })
+
 
 -- =========================================
 
@@ -218,9 +264,9 @@ lvim.builtin.which_key.mappings["F"] = {
 
 -- keymappings
 lvim.keys.normal_mode["<leader>e"] = ":NERDTreeToggle<CR>"
-lvim.keys.normal_mode["<3>"] = ":DartAddBreakpoint<CR>"
-lvim.keys.normal_mode["<4>"] = ":DartStepOver<CR>"
-lvim.keys.normal_mode["<5>"] = ":DartPrint sum<CR>"
+--lvim.keys.normal_mode["<3>"] = ":DartAddBreakpoint<CR>"
+--lvim.keys.normal_mode["<4>"] = ":DartStepOver<CR>"
+--lvim.keys.normal_mode["<5>"] = ":DartPrint sum<CR>"
 lvim.keys.normal_mode["<leader>gs"] = ":NERDTreeGitStatus<CR>"
 lvim.keys.normal_mode["<leader>gd"] = ":NERDTreeGitDiff<CR>"
 lvim.keys.normal_mode["<leader>gu"] = ":NERDTreeGitUndo<CR>"

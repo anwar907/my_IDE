@@ -48,6 +48,6 @@
   "trouble.nvim": { "branch": "main", "commit": "f1168feada93c0154ede4d1fe9183bf69bac54ea" },
   "vim-colorscheme-icons": { "branch": "master", "commit": "222763399d53480806edb98630849af3e56abacb" },
   "vim-nerdtree-syntax-highlight": { "branch": "master", "commit": "35e70334a2ff6e89b82a145d1ac889e82d1ddb4e" },
-  "vimtex": { "branch": "master", "commit": "a630f0f75d9468d10c9125f2f1b0049e479c2f54" },
+  "vimtex": { "branch": "master", "commit": "aa4bd16eddc6f98f531219eeb1f92f056b47b837" },
   "which-key.nvim": { "branch": "main", "commit": "4acffc92953a90a790603bfdab7c92319ab167b1" }
 }
