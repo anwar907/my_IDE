@@ -1,7 +1,7 @@
 -- Forum: https://www.reddit.com/r/lunarvim/
 -- Discord: https://discord.com/invite/Xb9B4Ny
 --
-
+require('gitblame')
 require("user.lunar.palette")
 require("user.lunar.theme")
 require("user.keymaps")

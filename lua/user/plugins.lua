@@ -70,5 +70,18 @@ lvim.plugins = {
     config = function()
       require("dap")
     end
+  },
+  {
+    "ggandor/leap.nvim",
+    config = function()
+      require('leap').set_default_keymaps()
+    end,
+    dependencies = {
+      "tpope/vim-repeat",
+    },
+    lazy = false,
+  },
+  {
+    'f-person/git-blame.nvim'
   }
 }
