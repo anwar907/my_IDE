@@ -116,3 +116,8 @@ dap.configurations.typescriptreact = dap.configurations.javascript
 
 -- Git blame
 require('gitblame')
+
+-- tabufline
+vim.opt.termguicolors = true
+require('bufferline')
+    
