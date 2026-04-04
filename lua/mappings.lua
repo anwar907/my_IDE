@@ -11,6 +11,7 @@ map("i", "jk", "<ESC>")
 
 -- Formatting
 map("n", "<leader>fm", "<cmd>lua vim.lsp.buf.format()<cr>", { desc = "Format code" })
+map("v", "<leader>fm", "<cmd>lua vim.lsp.buf.format()<cr>", { desc = "Format selected code" })
 
 -- Debugging
 map("n", "<leader>d", "<ESC>", { desc = "Debugging" })
@@ -44,12 +45,10 @@ map("n", "<leader>gb", "<cmd>Telescope git_branches<cr>", { desc = "Git Branch" 
 
 
 -- LSP
-map("n", "<leader>D", "<ESC>", { desc = "References" })
-map("n", "<leader>Dd", "<cmd>lua vim.lsp.buf.definition()<cr>", { desc = "Go to definition" })
-map("n", "<leader>Dr", "<cmd>lua vim.lsp.buf.references()<cr>", { desc = "Go to references" })
-map("n", "<leader>Dh", "<cmd>lua vim.lsp.buf.hover()<cr>", { desc = "Hover documentation" })
-map("n", "<leader>Dh", "<cmd>lua vim.lsp.buf.hover()<cr>", { desc = "Hover documentation" })
-map("n", "<leader>Dn", "<cmd>lua vim.lsp.buf.implementation()<cr>", { desc = "Implementation" })
+map("n", "gd", "<cmd>lua vim.lsp.buf.definition()<cr>", { desc = "Go to definition" })
+map("n", "gr", "<cmd>lua vim.lsp.buf.references()<cr>", { desc = "Go to references" })
+map("n", "K", "<cmd>lua vim.lsp.buf.hover()<cr>", { desc = "Hover documentation" })
+
 map("n", "<leader>rn", "<cmd>lua vim.lsp.buf.rename()<cr>", { desc = "Rename symbol" })
 
 -- Lazy.nvim mappings
@@ -62,26 +61,20 @@ map("n", "<leader>uh", "<cmd>Lazy home<cr>", { desc = "Go to Lazy.nvim home" })
 map("n", "<leader>up", "<cmd>Lazy profile<cr>", { desc = "View plugin load profile" })
 map("n", "<leader>uu", "<cmd>Lazy update<cr>", { desc = "Update plugins" })
 
--- window
-map("n", "<leader>w", "<C-w>w", { desc = "Window" })
-map("n", "<leader>ww", "<C-w>w", { desc = "Switch to other window" })
-map("n", "<leader>wh", "<C-w>h", { desc = "Move to left window" })
-map("n", "<leader>wj", "<C-w>j", { desc = "Move to bottom window" })
-map("n", "<leader>wk", "<C-w>k", { desc = "Move to top window" })
-map("n", "<leader>wl", "<C-w>l", { desc = "Move to right window" })
-map("n", "<leader>wH", "<C-w>H", { desc = "Move window to the left" })
-map("n", "<leader>wJ", "<C-w>J", { desc = "Move window to the bottom" })
-map("n", "<leader>wK", "<C-w>K", { desc = "Move window to the top" })
-map("n", "<leader>wL", "<C-w>L", { desc = "Move window to the right" })
-map("n", "<leader>w=", "<C-w>=", { desc = "Make windows equal width & height" })
-map("n", "<leader>ws", "<C-w>s", { desc = "Split window horizontally" })
-map("n", "<leader>wv", "<C-w>v", { desc = "Split window vertically" })
-map("n", "<leader>wc", "<C-w>c", { desc = "Close current window" })
-map("n", "<leader>wo", "<C-w>o", { desc = "Close all other windows" })
 
+map("n", "gr", "<cmd>lua vim.lsp.buf.references()<CR>", opts)
+map("n", "gD", "<cmd>lua vim.lsp.buf.declaration()<CR>",opts)
+map("n", "gd", "<cmd>lua vim.lsp.buf.definition()<CR>", opts)
 
--- for i = 1, 9, 1 do
---   vim.keymap.set("n", string.format("<A-%s", i), function()
---     vim.api.nvim_set_current_buf(vim.t.bufs[i])
---   end)
--- end
+for i = 1, 9, 1 do
+    vim.keymap.set("n", string.format("<A-%s", i), function()
+        vim.api.nvim_set_current_buf(vim.t.bufs[i])
+    end)
+end
+
+-- Terminal
+map("n", "<leader>t", "<cmd>split<cr><cmd>terminal<cr>", { desc = "Open terminal" })
+
+-- Any-jump
+map("n", "<leader>aj", "<cmd>AnyJump<cr>", { desc = "Jump to definition/reference" })
+map("n", "<leader>ab", "<cmd>AnyJumpBack<cr>", { desc = "Jump back" })

@@ -39,6 +39,7 @@ dofile(vim.g.base46_cache .. "syntax")
 
 require "options"
 require "nvchad.autocmds"
+require "autocmds"
 
 -- Enable mouse globally
 vim.opt.mouse = "a"
@@ -62,9 +63,6 @@ end)
 require("mason-lspconfig").setup {
   automatic_enable = {"lua_ls", "html", "cssls", "jsonls", "dartls", "gopls", "bashls", "marksman", "pyright", "yamlls", "clangd", "eslint", "diagnosticls", "graphql", "ts_ls" }
 }
-
-local lspconfig = require('lspconfig')
-lspconfig.ts_ls.setup({})
 
 
 -- Custom breakpoint
@@ -119,8 +117,3 @@ dap.configurations.typescriptreact = dap.configurations.javascript
 
 -- Git blame
 require('gitblame')
-
--- tabufline
-vim.opt.termguicolors = true
-require('bufferline')
-    

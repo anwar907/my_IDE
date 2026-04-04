@@ -51,8 +51,8 @@ return {
     "mason-org/mason-lspconfig.nvim",
     opts = {},
     dependencies = {
-      { "mason-org/mason.nvim", opts = {} },
-      "neovim/nvim-lspconfig",
+        { "mason-org/mason.nvim", opts = {} },
+        "neovim/nvim-lspconfig",
     },
   },
   {
@@ -90,22 +90,22 @@ return {
   {
     'f-person/git-blame.nvim'
   },
+  {
+    "MunifTanjim/nui.nvim"
+  },
    {
     "nvchad/base46",
     lazy = true,
     build = function()
       require("base46").load_all_highlights()
     end,
-  },
-  {
-    "nvchad/ui",
-    config = function()
-      require "nvchad"
-    end
-  },
-  {
-    'akinsho/bufferline.nvim',
-    version = "*",
-    dependencies = 'nvim-tree/nvim-web-devicons'
-  }
+ },
+ {
+  "nvchad/ui",
+  config = function()
+    require "nvchad"
+  end
+},
 }
+
+
