@@ -80,9 +80,6 @@ map("n", "<leader>wc", "<C-w>c", { desc = "Close current window" })
 map("n", "<leader>wo", "<C-w>o", { desc = "Close all other windows" })
 
 
--- Terminal mode
-map("t", "<Esc>", "<C-\\><C-n>", { desc = "Exit terminal mode" })
-
 -- for i = 1, 9, 1 do
 --   vim.keymap.set("n", string.format("<A-%s", i), function()
 --     vim.api.nvim_set_current_buf(vim.t.bufs[i])

@@ -39,7 +39,9 @@ dofile(vim.g.base46_cache .. "syntax")
 
 require "options"
 require "nvchad.autocmds"
-require "autocmds"
+
+-- Enable mouse globally
+vim.opt.mouse = "a"
 
 -- Switch buffer
 require("nvchad.tabufline").prev()
