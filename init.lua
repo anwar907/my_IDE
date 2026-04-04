@@ -39,6 +39,7 @@ dofile(vim.g.base46_cache .. "syntax")
 
 require "options"
 require "nvchad.autocmds"
+require "autocmds"
 
 -- Switch buffer
 require("nvchad.tabufline").prev()
